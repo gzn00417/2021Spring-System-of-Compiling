@@ -1,0 +1,21 @@
+Program -> P
+P -> D P | S P | empty
+D -> proc X id DM ( M ) { P } | record id { P } | T id A ;
+DM -> empty
+A -> = F A | , id A | empty
+M -> M , X id | X id
+T -> X C
+X -> int | float | bool | char | int * | float * | bool * | char *
+C -> [ num ] C | empty
+S -> id = E ; | if ( B ) BM S N else BM S | while BM ( B ) BM S | call id ( Elist ) ; | return E ; | if ( B ) BM S | L = E ;
+L -> L [ E ] | id [ E ]
+E -> E + G | G
+G -> G * F | F
+F -> ( E ) | num | id | real | string | L
+B -> B or BM H | H
+H -> H and BM I | I
+I -> ! I | ( B ) | E Relop E | true | false
+BM -> empty
+N -> empty
+Relop -> < | <= | > | >= | == | !=
+Elist -> Elist , E | E

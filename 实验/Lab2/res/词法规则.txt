@@ -1,0 +1,41 @@
+//单个数字
+digital-> [0-9]
+//单个字母
+letter-> [a-zA-Z]
+//标识符
+Identifier-> letter_(letter_|digit)* //其中letter-> [a-zA-Z]|_
+//十进制常数
+digits -> digit digit*
+//八进制常数
+OCT -> 0(0-7)(0-7)*
+//十六进制常数
+HEX -> 0x(0-9a-fA-F) (0-9a-fA-F)*
+//小数部分
+optionalFraction -> .digits|ε
+//科学计数法部分
+optionalExponent -> E(+|-|ε)digits|ε
+//整合之后的数字常数
+number -> digits optionalFraction optionalExponent
+//字符串常量
+string -> ".+"  //.在正则表达式中可以匹配任意单个非空白字符
+//字符常量
+char -> '.'
+//关键字
+keyword-> "char" |  "long " |  "short" |  "float" |  "double" |  "const"|  "boolean" |  
+        	 "void" |  "null" |  "false"  |  "true" |  "enum"|  "int" |  "do" |  "while"|  "if" 
+       	  |  "else" |  "for" |  "then"|  "break" |  "continue" |  "class" |  "static"|  
+         	"final" |  "extends" |  "new" |  "return" |  "signed" |  "struct" |  "union" |  
+         	"unsigned" |  "goto" |  "switch" | "case" |  "default" |  "auto" |  "extern" |  
+         	"register" |  "sizeof" |  "typedef" |  "volatile"
+//运算符
+operation-> ">" |  ">=" |  "<" |  "<=" |  "==" |  "!=" |  "|" |  "&" |  "||" |  "&&" |  "!" |  
+         	    "^" |  "+" |  "-" |  "*" |  "/" |  "%" |  "++" |  "--" |  "+=" |  "-=" |  "*=" 
+                      |"/="
+//界符
+delimiter-> "," |  "=" |  ";" |  "[" |  "]" | "(" |  ")" |  "{" |  "}" |  "." |  "\" |  " ' "
+//多行注释
+multipleLineNote-> \/\*([^\*^\/]*|[\*^\/*]*|[^\**\/]*)*\*\/
+//单行注释
+oneLineNote-> //.*
+
+

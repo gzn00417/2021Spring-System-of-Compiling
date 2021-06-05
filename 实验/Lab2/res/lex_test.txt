@@ -1,0 +1,38 @@
+int m,z=0x12;
+int d=04;
+float mzm=1.2E-10;
+m = 2+3*4;
+float pq = 1.2;
+p = &x;
+char c= 'a';
+real b = 1;
+int[2][4] h;
+h[2][0]=4;
+k = &h;
+int[3] a;
+a[0] = 2;
+while(m>2)
+do
+if(m<8)
+then m = m +1;
+else m = m*2;
+int i;
+for(i = 0;i<10;i++){
+  m = m+2;
+}
+record stack{
+  int num;
+  char value;
+}
+proc int getSum(int x,int y){
+   int j = x;
+   int k = y;
+   return j+k;
+}
+int d = 1.0E-;   /*error science*/
+char a = 'a;
+int m = 0xg;    /*error Hexadecimal*/
+//This is note
+/*多
+行*/
+string mzm = "ncj;

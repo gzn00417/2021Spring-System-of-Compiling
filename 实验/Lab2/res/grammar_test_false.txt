@@ -1,0 +1,26 @@
+int a = 10, x = 1, y = 2, c = 5;
+a = x + y; /*int a = x + 1;*/
+int [100][200] b;
+a = c;
+int d = 0;
+if (a == c)   d = 1;
+else   d = 2;
+while (a < 20)   a = a + 1;
+float f = 10.0;
+char [10] s = "Hello";
+proc int function(int x, int y){
+    y = x + 1;
+    return y;
+}
+call function(a, d);
+record stu {
+    int z = 1;
+}
+int *p;
+int xx;
+int yy;
+int a int;
+record stu
+   int z = 1;
+}
+if (a>0 && x!=0 || y!=0) a = 50;

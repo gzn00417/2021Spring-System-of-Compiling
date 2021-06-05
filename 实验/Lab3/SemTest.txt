@@ -1,0 +1,33 @@
+proc function1;
+begin
+    proc function2;
+    begin
+        integer[2][2] arr;
+        integer a;
+        integer b;
+        integer c;
+        real e;
+        record begin real re1; integer re2; end r1;
+        real a; /* Duplicate definition */
+        while a<b do
+        begin
+            if a<c then
+            begin
+                a=a+b;
+            end
+            else
+            begin
+                b=a*b;
+            end
+        end
+        arr[0][1] = 2;
+        a = ( a + b ) * 9;
+
+        e = e + a;  /* type conversion */
+        call a(1);  /* Call common var */
+        e1 = 7; /* Use undefined var */
+        a[0] = 1; /* Non-array using array operators */
+        a = a + arr;  /* Add array and var */
+    end
+    call function2(1,2);
+end

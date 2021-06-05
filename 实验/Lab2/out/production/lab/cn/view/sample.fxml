@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="269.0" prefWidth="386.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.view.sample">
+   <children>
+      <HBox layoutX="43.0" layoutY="112.0" spacing="20.0">
+         <children>
+            <Button layoutX="35.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleLexical" prefHeight="46.0" prefWidth="87.0" text="词法分析" />
+            <Button layoutX="150.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleGrammar" prefHeight="46.0" prefWidth="87.0" text="语法分析" />
+            <Button layoutX="265.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleSemantic" prefHeight="46.0" prefWidth="87.0" text="语义分析" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

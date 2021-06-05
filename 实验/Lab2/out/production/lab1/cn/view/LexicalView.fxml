@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.view.LexicalView">
+   <children>
+      <SplitPane dividerPositions="0.6806020066889632" layoutX="200.0" layoutY="120.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="224.0" prefWidth="124.0">
+               <children>
+                  <TextArea fx:id="fileContents" layoutX="117.0" layoutY="42.0" prefHeight="398.0" prefWidth="403.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="182.0" prefWidth="238.0">
+               <children>
+                  <Pane layoutX="46.0" layoutY="75.0">
+                     <children>
+                        <Button layoutY="99.0" mnemonicParsing="false" onAction="#showRule" prefHeight="51.0" prefWidth="96.0" text="查看规则" />
+                        <Button mnemonicParsing="false" onAction="#chooseFile" prefHeight="51.0" prefWidth="96.0" text="选择文件" />
+                        <Button layoutY="197.0" mnemonicParsing="false" onAction="#showResult" prefHeight="51.0" prefWidth="96.0" text="分析结果" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
